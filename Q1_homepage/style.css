@@ -1,0 +1,119 @@
+.lightMode {
+    color:rgb(75, 63, 59);
+    font-weight: 500;
+    background-color:rgb(247, 247, 247); 
+}
+
+.class01 {
+    font-style:italic;
+    font-size:xx-large;
+    /* text-align: center; */
+    color: rgb(235, 72, 99);
+    background-color: rgb(18, 22, 46);
+    padding-left: 10cm;
+    padding-right: 10cm;
+    border-radius: 1cm;
+
+}
+.heading {
+    color:rgb(250, 246, 246);
+    font-size:xx-large;
+    font-style:italic;
+    text-shadow: 10in;
+    
+}
+
+.darkMode {
+    color:rgb(12, 12, 12);
+    font-size:xx-large;
+    font-style:italic;
+    text-shadow: 10in;
+    /* background-color:rgb(18, 22, 46); */
+    /* background-color: lightpink; */
+    
+}
+
+.pink {
+    color:rgb(12, 12, 12);
+    font-size:xx-large;
+    font-style:italic;
+    text-shadow: 10in;
+    /* background-color:rgb(18, 22, 46); */
+    /* background-color: lightpink; */
+}
+
+th {
+    background-color: rgb(96, 96, 209);
+    padding-left: 5cm;
+    padding-right: 5cm;
+    border-radius: 1cm;
+    padding-top: 0.1cm;
+    padding-bottom: 0.1cm;
+    font-size: large;
+}
+
+td {
+    color:rgb(238, 196, 119);
+}
+
+table {
+    text-align: center;
+}
+
+.dabba {
+    background-color: rgb(99, 102, 104);
+    color:rgb(0, 0, 12);
+}
+
+.b1 {
+    border-radius: 50%;
+    background-color: white;
+    padding: 32px;
+}
+
+.b2 {
+    border-radius: 50%;
+    padding: 32px;
+    background-color: rgb(233, 96, 119);
+}
+
+.b3 {
+    border-radius: 50%;
+    /* background-color: rgb(52, 134, 35); */
+    background-color: green;
+    padding: 32px;
+}
+
+.b4 {
+    color: white;
+    border-radius: 50%;
+    padding: 32px;
+    background-color: rgb(7, 7, 56);
+}
+
+.b5 {
+    color: red;
+    border-radius: 50%;
+    padding: 32px;
+    background-color: rgb(15, 1, 3);
+}
+
+.font_change {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.font_big {
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.font_small {
+    font-size: small;
+    font-weight: 400;
+}
+
+#id1 {
+    position:fixed;
+    top:50%;
+}

@@ -1,0 +1,182 @@
+<html>
+    <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javaScript.js"></script>
+    
+    </head>
+
+    <body id="body_id" class="darkMode" style="background-color:rgb(129, 39, 154);">
+        <!-- <h1 id="changable" class="heading">
+            <center>
+                Welcome Home!
+            </center>
+        </h1> -->
+
+        <style>
+            img {
+                vertical-align: middle;
+            }
+        </style>
+        <a href="https://www.instagram.com/vrinda_.agarwal/"><img id="id1" src="insta.png" height="65" ></a>
+        <a href="https://github.com/Vrinda-Agarwal"><img id="id2" src="git.png" height="65" ></a>
+        <a href="https://www.linkedin.com/in/vrinda-agarwal-94608b248/"><img id="id3" src="linkedin.png" height="65" ></a>
+        <!-- style="vertical-align:middle;" -->
+        <center>
+
+        <table class="t_heads" CELLSPACING ="3mm">
+            <tr>
+                <th class="class01" colspan="4">Vrinda Agarwal</th>
+            </tr>
+            <tr>
+            <td colspan="4"><img src="vrinda.jpg" height="300"><br><br><br><br></td>
+            </tr>
+            <tr>
+                <th colspan="4">Educational Background</th>
+                
+                <!--<th>Skills</th>
+                <th>News and Updates</th> -->
+            </tr>
+            <tr id="data3" style="color:rgb(147, 119, 238);">
+                <td>  1      </td>
+                <td> School </td>
+                <td>   GD Goenka Public School  </td>
+                <td>    Lucknow   </td>
+            </tr>
+            <!-- <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr> -->
+            <tr id="data4" style="color:rgb(17, 207, 64);">
+                <td>   2         </td>
+                <td>Intermediate</td>
+                <td>   GD Goenka Public School  </td>
+                <td>     Lucknow      </td>
+            </tr>
+            <tr id="data5" style="color:rgb(179, 35, 143);">
+                <td>     3       </td>
+                <td> Graduation in Computer Science  </td>
+                <td>    IIIT   </td>
+                <td>    Hyderabad       </td>
+            </tr>
+
+            <tr>
+                <td colspan="4"> </td>
+            </tr>
+            <tr>    
+                <td colspan="4"> </td>
+            </tr>
+            <tr>    
+                <td colspan="4"> </td>
+            </tr>
+            <tr>    
+                <td colspan="4"> </td>
+            </tr>
+            <!-- <tr><br></tr> -->
+            <tr>
+                <th colspan="4">Achievements</th>
+            </tr>
+            <tr>
+                <td id="data1" colspan="4" style="color:rgb(238, 196, 119);">
+                    <br>
+                    <center>
+
+                    I have secured AIR 868 in JEE Mains and AIR 4872 in JEE Advanced 2021.<br> I am a trained Kathak Dancer, I have completed Vid Final year in Kathak which is equivalent to Bachelors in Arts.<br> I was awarded Special Mention in GDGPS MUN,2019. <br> 
+                    I am a scholar in BrainoBrain Abacus program in which I have successfully completed all the 10 levels. <br> 
+                     Deans List Awardee for Monsoon Semester 2021-22.
+                    </center>   
+                    <br> 
+                </td>
+            </tr>
+            <tr>
+                <th colspan="4">Skills</th>
+            </tr>
+            <tr style="color: rgba(13, 223, 129, 0.397)"> 
+                <td style="color:rgb(19, 59, 3)" colspan="4"><br><h4> <a href="https://github.com/Vrinda-Agarwal" >I will take you to a website :) </a></h4></td>
+            </tr>    
+            <tr>
+                <td id="data2" colspan="4" style="color:rgb(238, 196, 119);">
+                    <br>
+                    <center>
+                        <ol>Computer Programming</ol>
+                        <ol> Data Structures and Algorithms </ol>
+                        <ol> Operating Systems and Networks</ol>
+                        <ol> Software Systems</ol>
+                        <ol> Python </ol>
+                        <ol> Database Management </ol>
+                        <ol> MERN Stack</ol>
+                    </center>   
+                    <br> 
+                </td>
+            </tr>
+            <tr>    
+                <td>     </td>
+                <td class="dabba">Dance</td>
+                <td class="dabba">Dramatics</td>
+                <td>     </td>
+            </tr>
+            <tr>    
+                <td>                               </td>
+                <td class="dabba">Debating</td>
+                <td class="dabba">Singing</td>
+                <td>                               </td>
+            </tr>
+            
+            <tr>
+                <th colspan="4">News and Updates</th>
+            </tr>
+            <div id="box3">
+                <table id="abcd">
+                  <tr>
+                    <th><u>Live News Update
+                      </u></th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div id="studentForm"></div>
+                    </td>
+                  </tr>
+                
+            </div>
+
+        </table>
+
+        <div id="texten">
+            <script>
+              
+              let num = parseInt(localStorage.getItem("nn"));
+              for (let i = 1; i <= num; i++) {
+                let key_val = localStorage.getItem("NEWS_ID_" + i);
+                const node = document.createElement("p");
+                const textnode = document.createTextNode(key_val);
+                node.appendChild(textnode);
+                document.getElementById("texten").appendChild(node);
+              }
+      
+              document.getElementById("saveServer").value = "";
+            </script>
+        </div>
+        <form id="studentForm">
+        <input id="studentf" type="text" placeholder="Write here" name="name" required />
+        <button onclick="update()">Add News</button>
+        </form>
+        
+        <button class="b1" onclick="light()"> Light </button>
+        <button class="b2" onclick="pink()"> Pink </button>
+        <button class="b3" onclick="green()"> Green </button>
+        <button class="b4" onclick="dark()"> Dark </button>
+        <button class="b5" onclick="evil()">Evil</button>
+
+        <br>
+
+        <button onclick="small()"> 1 </button>
+        <button onclick="normal()">2</button>
+        <button onclick="big()"> 3 </button>
+        <p id="lastE" class="font_change"> Thankyou! <br> </p>
+
+        </center>
+    </body>
+
+</html>
