@@ -1,6 +1,5 @@
 function light() {
     // document.write("hey");
-    document.getElementById("id1").src="insta_light.jpg";
     document.getElementById("body_id").style="background-color: white;";
     document.getElementById("data1").style="color:rgb(18, 22, 46);";
     document.getElementById("data2").style="color:rgb(18, 22, 46);";
@@ -12,7 +11,6 @@ function light() {
 
 function evil() {
     
-    document.getElementById("body_id").style="background-color: black;";
     document.getElementById("data1").style="color:red;";
     document.getElementById("data2").style="color:red;";
     document.getElementById("data3").style="color:red;";
